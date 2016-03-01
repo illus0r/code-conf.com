@@ -1,0 +1,18 @@
+title: Your awesome title
+
+markdown: kramdown
+
+collections:
+  events:
+    output: true
+    permalink: /:path/
+    #permalink: /training/:path/
+  authors:
+    output: false
+
+defaults:
+ -
+    scope:
+      type: events
+    values:
+      layout: event

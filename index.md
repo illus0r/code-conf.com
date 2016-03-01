@@ -1,4 +1,22 @@
 ---
-
+layout: default
 ---
-We're live!
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for e in site.events %}
+      {% assign fname = e.path | split: "/" | last | split: "." | first %}
+      {% if fname == "index" %}
+        <a href="{{ e.url }}">
+          {{ e.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
