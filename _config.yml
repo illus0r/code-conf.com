@@ -1,5 +1,8 @@
-title: Your awesome title
-
+name: Continuous Delivery Conferences and Events
+highlighter: rouge
+exclude: [README.md]
+timezone: Europe/Copenhagen
+url: new.code-conf.com
 markdown: kramdown
 
 collections:
