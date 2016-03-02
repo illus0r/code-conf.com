@@ -1,6 +1,5 @@
 ---
 ---
 
-
 {% assign d = site.data.DayOfContainers %}
-{% include date-time.html %}
+{% include date-location.html %}

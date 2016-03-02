@@ -1,3 +1,11 @@
-{{ page.color }}
-{{ page.ribbon }}
-{{ page.branding }}
+<section style="background: #{{ page.color }}">
+<div>
+  <img src="{{ page.event_header.img }}" alt="">
+  <div class="ribbon">
+    {{ page.event_header.ribbon }}
+  </div>
+  <h1>
+    {{ page.branding }}
+  </h1>
+</div>
+</section>

@@ -1,7 +1,26 @@
-<h2>
-  date-location
-</h2>
-
-<p>Date: {{ event_data.details.date | date: '%B %d %Y' }}</p>
-<p>Time: {{ event_data.details.date | date: '%B %d %Y' }}</p>
-<p>Location: {{ event_data.details.city }}</p>
+<section>
+  <div>
+    <h2>
+      date-location
+    </h2>
+    
+    <div class="class">
+      <div class="label">Date</div>
+      <div class="value date">
+          {{ page.details.date | date: '%B %page, %Y' }}
+      </div>
+    </div>
+    <div class="class">
+      <div class="label">Time </div>
+      <div class="value time">
+        {{ page.details.date | date: '%h:%m' }}
+      </div>
+    </div>
+    <div class="class">
+      <div class="label">Location</div>
+      <div class="value date">
+        {{ page.details.city }}
+      </div>
+    </div>
+  </div>
+</section>

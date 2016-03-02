@@ -1,24 +1,27 @@
-<h2>Speakers</h2>
-
-{% for page_speaker in page.speakers %}
-  {% assign id=page_speaker[0] %}
-    {% for site_speaker in site.speakers %}
-      {% assign speaker_fname = site_speaker.path | split:"/" | last | split:"." | first %}
-      {% if speaker_fname == id %}
-<div class="speaker">
-  <div class="image">
-    <img src="{{ site_speaker.img }}" alt="{{ site_speaker.name }}">
-  </div>
-  <div class="position">
-    {{ site_speaker.position }}
-  </div>
-  <div class="name">
-    {{ site_speaker.name }}
-  </div>
-  <div class="text">
-    {{ page_speaker[1].text | markdownify }}
-  </div>
+<section style="background: #{{ page.color }}">
+<div>
+  <h2>Speakers</h2>
+  {% for page_speaker in page.speakers %}
+    {% assign id=page_speaker[0] %}
+      {% for site_speaker in site.speakers %}
+        {% assign speaker_fname = site_speaker.path | split:"/" | last | split:"." | first %}
+        {% if speaker_fname == id %}
+          <div class="speaker">
+            <div class="image">
+              <img src="{{ site_speaker.img }}" alt="{{ site_speaker.name }}">
+            </div>
+            <div class="position">
+              {{ site_speaker.position }}
+            </div>
+            <div class="name">
+              {{ site_speaker.name }}
+            </div>
+            <div class="text">
+              {{ page_speaker[1].text | markdownify }}
+            </div>
+          </div>
+        {% endif %}
+     {% endfor %}
+  {% endfor %}
 </div>
-      {% endif %}
-   {% endfor %}
-{% endfor %}
+</section>
