@@ -3,7 +3,9 @@
 @charset "utf-8";
 
 @import
-        "base/typo.scss",
+        "base/vars.scss",
+        "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+        "base/typo.scss", //on top
         "base/layout.scss",
         /*"helpers/",*/
         /*"pages/",*/
