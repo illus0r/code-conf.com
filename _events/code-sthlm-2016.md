@@ -22,7 +22,8 @@ adress: Tordenskiolds gate 3, 0160 Oslo. Mesh
 
 checkout:
   price: 200
-  eventbride: 123
+  eventbriteid: 21382334137
+
 speakers:
   meekrosoft:
     text:  Mike will tell about all the things.
@@ -40,3 +41,4 @@ speakers:
 {% include date-location.html %}
 {% include speakers.html %}
 
+{% include eventbrite-ticket-form.html eventbriteid=page.checkout.eventbriteid %}
