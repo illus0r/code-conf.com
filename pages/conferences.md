@@ -1,0 +1,4 @@
+---
+permalink: /conferences/
+title: Conferences
+---

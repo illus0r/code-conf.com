@@ -3,4 +3,4 @@
 
 
 {% assign d = site.data.DayOfContainers %}
-{% include details.html %}
+{% include date-time.html %}
