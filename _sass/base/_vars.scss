@@ -1,3 +1,15 @@
 $font-family-base: "Roboto", Helvetica, sans-serif;
 $headings-font-family: Abolition-Regular, $font-family-base;
 $font-size-base:          18px;
+
+$orange: #E87E04;
+$yellow: #fff006;
+
+
+$grid-gutter-width:         30px !default;
+$container-tablet:             (1px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+$container-desktop:            (1px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+$container-large-desktop:      (990px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;

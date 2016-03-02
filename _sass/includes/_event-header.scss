@@ -1,0 +1,55 @@
+.include-event-header{
+  &>div{
+    position: relative;
+  }
+  img.bg{
+    width: 100%;
+  }
+  .rip{
+    position: absolute;
+  }
+  .rip-t{
+    top: 0;
+  }
+  .rip-b{
+    bottom: 0;
+  }
+  .ribbons{
+    position: absolute;
+    bottom: 0;
+    .ribbon-small{
+      background: black;
+      color: white;
+      display: inline-block;
+      font-family: $headings-font-family;
+      font-size: 2.7em;
+      margin: 0;
+      padding: 0 40px 0 30px;
+    }
+    .ribbon-main{
+      h1{
+        color: white;
+        font-size: 6em;
+        margin: 0;
+        padding: 0 40px 0 30px;
+        em{
+          color: $orange;
+          font-style: normal;
+        }
+      }
+    }
+  }
+  .price{
+    background: yellow;
+    border-radius: 1000px;
+    font-family: Permanent Marker;
+    font-size: 2em;
+    height: 150px;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    top: 30px;
+    transform: rotate(10deg);
+    width: 150px;
+  }
+}

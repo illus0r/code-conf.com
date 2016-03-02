@@ -1,13 +1,16 @@
 ---
 permalink: /code-sthlm-2016/
-branding: CoDe-STHLM
+branding: >
+  *CO*DE*-*STHLM
 title: Day of containers
 color: 660066
+price: Sold out!
 
 # events header
 event_header:
-  img: images/yo.jpg
+  img: /images/code-sthlm-2016.jpg
   ribbon: Join us for...
+
 
 # date location
 details:
