@@ -1,0 +1,11 @@
+---
+title: Day of containers
+permalink: /day-of-containers-oslo/
+details:
+  date: 25.06.2016
+  city: Oslo
+  adress: Tordenskiolds gate 3, 0160 Oslo. Mesh
+checkout:
+  price: 200
+  eventbride: 123
+---

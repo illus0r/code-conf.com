@@ -1,0 +1,19 @@
+{% for a in page.authors %}
+  {% assign id=a[0] %}
+    {% for a in site.authors %}
+      <div class="author">
+        <div class="image">
+          <img src="{{ a.img }}" alt="{{ a.name }}">
+        </div>
+        <div class="position">
+          {{ a.position }}
+        </div>
+        <div class="name">
+          {{ a.name }}
+        </div>
+        <div class="text">
+          {{ a.text }}
+        </div>
+      </div>
+   {% endfor %}
+{% endfor %}
