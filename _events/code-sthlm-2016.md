@@ -1,22 +1,24 @@
 ---
-permalink: /code-sthlm-2016/
+#permalink: /code-sthlm-2016.html
 branding: >
   *CO*DE*-*STHLM
-title: Day of containers
+title: CODE-STHLM
 color: 660066
 price: Sold out!
+time: 09—18:00
 
 # events header
+
 event_header:
   img: /images/code-sthlm-2016.jpg
   ribbon: Join us for...
 
+# date & location
 
-# date location
-details:
-  date: 25.06.2016 18:00
-  city: Oslo
-  adress: Tordenskiolds gate 3, 0160 Oslo. Mesh
+date_: 25.06.2016
+city: Oslo
+adress: Tordenskiolds gate 3, 0160 Oslo. Mesh
+
 checkout:
   price: 200
   eventbride: 123
@@ -36,3 +38,4 @@ speakers:
 {% include event-header.html %}
 {% include date-location.html %}
 {% include speakers.html %}
+

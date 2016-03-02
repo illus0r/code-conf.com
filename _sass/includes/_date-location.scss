@@ -1,0 +1,29 @@
+.include-date-location{
+  font-family: $headings-font-family;
+  /*padding-left: 100px;*/
+  &>section{
+    &>div{
+      margin-left: 60px;
+    }
+  }
+  .date{
+    @extend .col-md-5;
+    @extend .col-md-offset-1;
+    background: url(/images/icon-date.png) -34px 0 no-repeat;
+  }
+  .time{
+    @extend .col-md-3;
+    background: url(/images/icon-time.png) -34px 0 no-repeat;
+  }
+  .place{
+    @extend .col-md-3;
+    background: url(/images/icon-place.png) -34px 0 no-repeat;
+  }
+
+  .label_{
+    font-size: 2em;
+  }
+  .value{
+    font-size: 3em;
+  }
+}

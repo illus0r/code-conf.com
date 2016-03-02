@@ -1,26 +1,20 @@
-<section>
-  <div>
-    <h2>
-      date-location
-    </h2>
-    
-    <div class="class">
-      <div class="label">Date</div>
-      <div class="value date">
-          {{ page.details.date | date: '%B %page, %Y' }}
-      </div>
+<section class="include-date-location">
+  <section class="date">
+    <div class="label_" style="color: #{{ page.color }}">Date</div>
+    <div class="value">
+        {{ page.date_ | date: '%B %page, %Y' }}
     </div>
-    <div class="class">
-      <div class="label">Time </div>
-      <div class="value time">
-        {{ page.details.date | date: '%h:%m' }}
-      </div>
+  </section>
+  <section class="time">
+    <div class="label_" style="color: #{{ page.color }}">Time</div>
+    <div class="value">
+      {{ page.time }}
     </div>
-    <div class="class">
-      <div class="label">Location</div>
-      <div class="value date">
-        {{ page.details.city }}
-      </div>
+  </section>
+  <section class="place">
+    <div class="label_" style="color: #{{ page.color }}">Place</div>
+    <div class="value">
+      {{ page.city }}
     </div>
-  </div>
+  </section>
 </section>
