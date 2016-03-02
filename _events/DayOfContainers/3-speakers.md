@@ -1,6 +1,5 @@
 ---
-#layout: author
-test: test
+weight: 30
 authors:
   meekrosoft:
     position: Pos1, Praqma
@@ -23,4 +22,4 @@ authors:
       Whether you are a startup or an enterprise; using private cloud, public cloud, or no cloud; an Agile noob or a DevOps pro; struggling with core banking systems, or building a new social/local/mobile app that will change the world (!); this session will give you actionable ideas on using cloud and DevOps together to revolutionize your software and service delivery lifecycle.
 ---
 
-{% include authors.html %}
+{% include speakers.html %}

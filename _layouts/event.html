@@ -10,7 +10,7 @@ layout: default
   <!--partials output-->
   {% assign current_folder = page.path | split: "/" | pop | last %}
   <!--{{ current_folder | jsonify }}-->
-  {% assign events_sorted = site.events | sort: "weight" %}
+  {% assign events_sorted = site.events | sort: "path" %}
   {% for partial in events_sorted %}
     <!--we need only those, who lives in the same folder-->
     {% assign current_partial_folder = partial.path | | split: "/" | pop | last %}
