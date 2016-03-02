@@ -10,8 +10,8 @@ collections:
     output: true
     permalink: /:path/
     #permalink: /training/:path/
-  authors:
-    output: false
+  speakers:
+    output: true
 
 defaults:
  -
