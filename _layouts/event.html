@@ -11,11 +11,17 @@ layout: default
   {% assign current_folder = page.path | split: "/" | pop | last %}
   <!--{{ current_folder | jsonify }}-->
   {% assign events_sorted = site.events | sort: "path" %}
-  {% for partial in events_sorted %}
-    <!--we need only those, who lives in the same folder-->
-    {% assign current_partial_folder = partial.path | | split: "/" | pop | last %}
-    {% if current_folder == current_partial_folder %}
-      {{ partial.content }}
-    {% endif %}
-  {% endfor %}
+  <main class="layout-event">
+    {% for partial in events_sorted %}
+      <!--we need only those, who lives in the same folder-->
+      {% assign current_partial_folder = partial.path | | split: "/" | pop | last %}
+      {% if current_folder == current_partial_folder %}
+        <section>
+          <div>
+            {{ partial.content }}
+          </div>
+        </section>
+      {% endif %}
+    {% endfor %}
+  </main>
 {% endif %}
