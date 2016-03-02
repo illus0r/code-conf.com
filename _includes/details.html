@@ -2,6 +2,21 @@
   date-location
 </h2>
 
-<p>Date: {{ d.details.date | date: '%B %d, %Y' }}</p>
-<p>Time: {{ d.details.date | date: '%h:%m' }}</p>
-<p>Location: {{ d.details.city }}</p>
+<div class="class">
+  <div class="label">Date</div>
+  <div class="value date">
+      {{ d.details.date | date: '%B %d, %Y' }}
+  </div>
+</div>
+<div class="class">
+  <div class="label">Time </div>
+  <div class="value time">
+    {{ d.details.date | date: '%h:%m' }}
+  </div>
+</div>
+<div class="class">
+  <div class="label">Location</div>
+  <div class="value date">
+    {{ d.details.city }}
+  </div>
+</div>
