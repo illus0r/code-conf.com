@@ -6,6 +6,7 @@ title: CODE-STHLM
 color: 660066
 price: Sold out!
 time: 09—18:00
+subtitle: Continuous Delivery and DevOps Conference
 
 # events header
 

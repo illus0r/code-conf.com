@@ -1,0 +1,26 @@
+header{
+  &>div{
+    @extend .col-md-12;
+    background: black;
+  }
+  img{
+    
+  }
+  nav{
+    float: right;
+    a{
+      font-size: 1.7em;
+      line-height: 2.1em;
+      margin-right: 20px;
+      font-family: $headings-font-family;
+      color: white;
+      opacity: 0.7;
+      &:hover{
+        opacity: 1;
+        color: white;
+      }
+      /*float: right;*/
+      /*display: block;*/
+    }
+  }
+}

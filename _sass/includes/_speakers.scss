@@ -1,0 +1,16 @@
+.include-speakers{
+  .speaker{
+    @extend .row;
+  }
+  .image{
+    @extend .col-md-4;
+    img{
+      width: 100%;
+      border-radius: 1000px;
+    }
+  }
+  .details{
+    @extend .col-md-8;
+    background: white;
+  }
+}
