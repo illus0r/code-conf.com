@@ -8,7 +8,7 @@ layout: default
   <ul class="post-list">
     {% for e in site.events %}
     {{ e.url }}
-    <!--{{ e | jsonify }}-->
+    
       {% assign fname = e.path | split: "/" | last | split: "." | first %}
       <a href="{{ e.url }}">
         {{ e.title }}
@@ -16,5 +16,3 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-
-
