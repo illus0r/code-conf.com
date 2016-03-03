@@ -10,14 +10,19 @@
             <div class="image">
               <img src="{{ site_speaker.img }}" alt="{{ site_speaker.name }}">
             </div>
-            <div class="position">
-              {{ site_speaker.position }}
-            </div>
-            <div class="name">
-              {{ site_speaker.name }}
-            </div>
-            <div class="text">
-              {{ page_speaker[1].text | markdownify }}
+            <div class="details">
+              <div class="name">
+                {{ site_speaker.name }}
+              </div>
+              <div class="position">
+                {{ site_speaker.position }}
+              </div>
+              <div class="text">
+                {{ page_speaker[1].text | markdownify }}
+              </div>
+              <div class="social">
+                {{ site_speaker.social | markdownify }}
+              </div>
             </div>
           </div>
         {% endif %}

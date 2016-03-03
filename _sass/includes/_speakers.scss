@@ -10,7 +10,17 @@
     }
   }
   .details{
-    @extend .col-md-8;
+    @extend .col-md-7;
     background: white;
+  }
+  .name, .position{
+    font-family: $headings-font-family;
+    display: inline-block;
+  }
+  .name{
+    font-size: 2em;
+  }
+  .position{
+    font-size: 1.5em;
   }
 }

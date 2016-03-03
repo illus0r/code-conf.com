@@ -2,5 +2,5 @@
 name: Mike
 bio:  Hello there!
 position: Pos1, Praqma
-img: meekrosoft.jpg
+img: /images/lakruzz.png
 ---

@@ -1,8 +1,8 @@
 ---
-name: Lars Kruse
+name: Allan Bdrup
 bio:  Hello there!
 position: Pos1, Praqma
 img: /images/lakruzz.png
 social: >
-  Twitter: [lakruzz](#) Blog: [lakruzz.com](#)
+  Twitter: [allanbdrup](#) Blog: [allanbdrup.com](#)
 ---
