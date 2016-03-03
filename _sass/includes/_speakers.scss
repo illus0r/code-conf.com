@@ -1,14 +1,22 @@
 .include-speakers{
+  &>div{
+    @extend .col-md-12
+  }
   h2{
     color: white;
+    font-size: 5.5em;
+    margin-top: 12px;
+    margin-left: 55px;
   }
   .speaker{
     @extend .row;
+    margin-bottom: 20px;
   }
   .image{
     @extend .col-md-4;
+    text-align: center;
     img{
-      width: 100%;
+      width: 80%;
       border-radius: 1000px;
     }
   }
@@ -19,6 +27,7 @@
   .speaker:nth-child(2n+1){
     .image{
       @extend .col-md-push-7;
+      @extend .col-md-offset-1;
     }
     .details{
       @extend .col-md-pull-4;
@@ -29,9 +38,11 @@
     display: inline-block;
   }
   .name{
-    font-size: 2em;
+    font-size: 3.6em;
+    margin-top: -7px;
   }
   .position{
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin-left: 30px;
   }
 }

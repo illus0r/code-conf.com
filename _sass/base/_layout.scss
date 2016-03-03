@@ -1,3 +1,7 @@
 header, .layout-default{
   @extend .container;
 }
+
+.layout-event>section>div{
+  background-clip: content-box;
+}

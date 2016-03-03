@@ -1,32 +1,32 @@
-<section class="include-speakers" style="background: #{{ page.color }}">
-<div>
-  <h2>The speakers</h2>
-  {% for page_speaker in page.speakers %}
-    {% assign id=page_speaker[0] %}
-      {% for site_speaker in site.speakers %}
-        {% assign speaker_fname = site_speaker.path | split:"/" | last | split:"." | first %}
-        {% if speaker_fname == id %}
-          <div class="speaker">
-            <div class="image">
-              <img src="{{ site_speaker.img }}" alt="{{ site_speaker.name }}">
+<section class="include-speakers">
+  <div style="background-color: #{{ page.color }}">
+    <h2>The speakers</h2>
+    {% for page_speaker in page.speakers %}
+      {% assign id=page_speaker[0] %}
+        {% for site_speaker in site.speakers %}
+          {% assign speaker_fname = site_speaker.path | split:"/" | last | split:"." | first %}
+          {% if speaker_fname == id %}
+            <div class="speaker">
+              <div class="image">
+                <img src="{{ site_speaker.img }}" alt="{{ site_speaker.name }}">
+              </div>
+              <div class="details">
+                <div class="name">
+                  {{ site_speaker.name }}
+                </div>
+                <div class="position">
+                  {{ site_speaker.position }}
+                </div>
+                <div class="text">
+                  {{ page_speaker[1].text | markdownify }}
+                </div>
+                <div class="social">
+                  {{ site_speaker.social | markdownify }}
+                </div>
+              </div>
             </div>
-            <div class="details">
-              <div class="name">
-                {{ site_speaker.name }}
-              </div>
-              <div class="position">
-                {{ site_speaker.position }}
-              </div>
-              <div class="text">
-                {{ page_speaker[1].text | markdownify }}
-              </div>
-              <div class="social">
-                {{ site_speaker.social | markdownify }}
-              </div>
-            </div>
-          </div>
-        {% endif %}
-     {% endfor %}
-  {% endfor %}
-</div>
+          {% endif %}
+       {% endfor %}
+    {% endfor %}
+  </div>
 </section>
