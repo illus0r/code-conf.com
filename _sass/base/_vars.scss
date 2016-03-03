@@ -7,9 +7,9 @@ $yellow: #fff006;
 
 
 $grid-gutter-width:         30px !default;
-$container-tablet:             (1px + $grid-gutter-width) !default;
+$container-tablet:             (990px + $grid-gutter-width) !default;
 $container-sm:                 $container-tablet !default;
-$container-desktop:            (1px + $grid-gutter-width) !default;
+$container-desktop:            (990px + $grid-gutter-width) !default;
 $container-md:                 $container-desktop !default;
 $container-large-desktop:      (990px + $grid-gutter-width) !default;
 $container-lg:                 $container-large-desktop !default;
