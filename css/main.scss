@@ -7,9 +7,6 @@
         "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
         "base/typo.scss", //on top
         "base/layout.scss",
-        /*"helpers/",*/
-        /*"pages/",*/
-        /*"themes/",*/
         "layouts/event",
         "components/header",
         "includes/event-header",
@@ -17,3 +14,5 @@
         "includes/date-location",
         "components/eventbrite"
 ;
+
+@import "base/helpers.scss";

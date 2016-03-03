@@ -2,25 +2,31 @@ header{
   &>div{
     @extend .col-md-12;
     background: black;
+    height: 70px;
   }
-  img{
-    
+  a.logo{
+    margin-left: 25px;
+    img{
+      
+    }
   }
   nav{
     float: right;
     a{
-      font-size: 1.7em;
-      line-height: 2.1em;
       margin-right: 20px;
       font-family: $headings-font-family;
       color: white;
-      opacity: 0.7;
+      font-size: 1.5em;
+      margin-right: 47px;
+      padding-top: 28px;
+      display: inline-block;
+      &:last-child{
+        margin-right: 40px;
+      }
       &:hover{
         opacity: 1;
         color: white;
       }
-      /*float: right;*/
-      /*display: block;*/
     }
   }
 }
