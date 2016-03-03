@@ -1,4 +1,7 @@
 .include-speakers{
+  h2{
+    color: white;
+  }
   .speaker{
     @extend .row;
   }
@@ -12,6 +15,14 @@
   .details{
     @extend .col-md-7;
     background: white;
+  }
+  .speaker:nth-child(2n+1){
+    .image{
+      @extend .col-md-push-7;
+    }
+    .details{
+      @extend .col-md-pull-4;
+    }
   }
   .name, .position{
     font-family: $headings-font-family;
