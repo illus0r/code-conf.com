@@ -1,8 +1,5 @@
 .include-event-header{
-  margin-bottom: 90px;
-  &>div{
-    position: relative;
-  }
+  position: relative;
   img.bg{
     width: 100%;
   }
@@ -41,7 +38,7 @@
       }
     }
   }
-  .price{
+  .dot{
     background: yellow;
     border-radius: 1000px;
     font-family: Permanent Marker;
@@ -67,5 +64,19 @@
       color: $orange;
       font-style: normal;
     }
+  }
+  &:after{
+    content: '';
+    background-image: url("/images/layout/rip-before-ffffff.png");
+    width: $container-large-desktop;
+    background-color: transparent;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    height: 89px;
+    display: block;
+    position: relative;
+    background-size: cover;
+    top: -89px;
   }
 }

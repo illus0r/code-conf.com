@@ -1,0 +1,55 @@
+
+@mixin rip( $placement: after, $rip-color: #000000, $bg-color: transparent, $height: 89px){
+  $c : str-slice( inspect($rip-color), 2);
+  background-image: url(/images/layout/rip-#{$placement}-#{$c}.png);
+  height: $height;
+  background-color: $bg-color;
+  content: '';
+  width: 100%;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+}
+
+.wrapper{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-clip: content-box;
+
+  h1, h2, h3, h4{
+    margin: 0;
+    color: white;
+  }
+  h1 {
+    font-size: $font-size-base * 4;
+  }
+
+  &.purple{
+    background-color: #000000;
+  }
+
+  &.black{
+    $bg-color : #000000;
+    background-color: $bg-color;
+    &.toprip{
+      &:before{
+        @include rip( before, $bg-color, #ffffff, 64px);
+      }
+    }
+
+    &.botrip{
+      &:after{
+        @include rip( after, $bg-color, #ffffff, 89px);
+      }
+    }
+
+
+  }
+  &.white{
+    background-color: #FFFFFF;
+  }
+
+}

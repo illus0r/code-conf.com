@@ -10,10 +10,10 @@
 }
 
 .eventbrite-ticket-wrapper{
-  width:      $container-large-desktop;
-  background-color: black;
   padding-bottom: 0px;
   padding-top: 0px;
+  background-color: black;
+  background-clip: content-box;
   h1, h2, h3, h4{
     margin: 0;
     color: white;
@@ -24,7 +24,7 @@
   &:before{
     content: '';
     background-image: url(/images/rip-t.png) ;
-    width: $container-large-desktop;
+    width: 100%;
     background-color: #FFFFFF;
     z-index: 1;
     margin-left: auto;
@@ -39,7 +39,7 @@
   &:after{
     content: '';
     background-image: url("/images/rip-b.png");
-    width: $container-large-desktop;
+    width: 100%;
     background-color: #FFFFFF;
     z-index: 1;
     margin-left: auto;

@@ -1,8 +1,5 @@
 <section class="include-event-header">
-<div>
   <img class="bg" src="{{ page.event_header.img }}" alt="">
-  <img class="rip rip-b" src="/images/rip-b-{{ page.color }}.png">
-  <img class="rip rip-t" src="/images/rip-t-{{ page.color }}.png">
   <div class="ribbons">
     <div class="ribbon-small">
       {{ page.event_header.ribbon }}
@@ -13,8 +10,6 @@
       </h1>
     </div>
   </div>
-  <div class="price">{{ page.price }}</div>
-  <!--TODO hide if empty-->
+  <div class="dot">{{ page.price }}</div>
   <div class="subtitle">{{ page.subtitle | markdownify }}</div>
-</div>
 </section>
