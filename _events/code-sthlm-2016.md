@@ -34,19 +34,11 @@ speakers:
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 ---
 
-{% include event-main.html
-  background-image=page.event_header.img
-  dot-text=page.price
-  brand-lead=page.event_header.ribbon
-  brand-suffix="STHLM"
-  caption=page.subtitle
-%}
+{% include event-main.html  background-image=page.event_header.img dot-text=page.price brand-lead=page.event_header.ribbon brand-suffix="STHLM" caption=page.subtitle %}
 
 {% include date-location.html %}
 
 {% include speakers.html %}
 {% include keynote-speakers.html %}
 
-{% include eventbrite-ticket-form.html
-  eventbriteid=page.checkout.eventbriteid
-%}
+{% include eventbrite-ticket-form.html  eventbriteid=page.checkout.eventbriteid %}
