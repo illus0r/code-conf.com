@@ -1,0 +1,32 @@
+<section >
+  <div class="wrapper white">
+    <div class="event-main">
+      <div class="image-canvas">
+        <img class="the-image" src="{{ include.background-image }}" alt="">
+
+        {% if include.dot-text %}
+        <div class="dot">{{ include.dot-text }}</div>
+        {% endif %}
+
+
+        <div class="ribbons">
+          {% if include.brand-lead %}
+          <div class="brand-lead">
+            {{ include.brand-lead }}
+          </div>
+          {% endif %}
+
+          {% if include.brand-suffix %}
+          <div class="brand-tag" style="background: #{{ page.color }}">
+            <h1><em>CO</em>DE<em>-</em>{{ include.brand-suffix }}<img   class="on-btn" src="/images/icons/on-symbol-cropped.png"></h1>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if include.caption %}
+      <div class="caption">{{ page.subtitle | markdownify }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>

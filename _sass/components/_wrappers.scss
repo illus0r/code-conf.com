@@ -11,7 +11,8 @@
   margin-right: auto;
   display: block;
   position: relative;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .wrapper{
