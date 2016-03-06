@@ -1,29 +1,31 @@
-.include-date-location{
+$date-loaction-font-size: 1.7em;
+.date-loaction{
   font-family: $headings-font-family;
-  /*padding-left: 100px;*/
-  &>section{
-    &>div{
-      margin-left: 60px;
-    }
-  }
-  .date{
-    @extend .col-md-5;
-    @extend .col-md-offset-1;
-    background: url(/images/icon-date.png) -34px 0 no-repeat;
-  }
-  .time{
-    @extend .col-md-3;
-    background: url(/images/icon-time.png) -34px 0 no-repeat;
-  }
-  .place{
-    @extend .col-md-3;
-    background: url(/images/icon-place.png) -34px 0 no-repeat;
+  font-size:   $date-loaction-font-size;
+  padding-left: 45px;
+  line-height: 1.2em;
+
+  & .image-canvas{
+    z-index: 1;
+    display: block;
+    position: relative;
+    float: left;
+    width: 78px;
   }
 
-  .label_{
-    font-size: 2em;
+  .date, .location{
+    @extend .col-md-4;
   }
-  .value{
-    font-size: 3em;
+
+  .time{
+    @extend .col-md-3;
+  }
+
+  .dl-label, .dl-value{
+    margin-right: -15px;
+  }
+
+  .dl-value{
+    font-size: $date-loaction-font-size*1.1;
   }
 }

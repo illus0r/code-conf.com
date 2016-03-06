@@ -1,20 +1,55 @@
-<section class="include-date-location">
+<section>
+  <wrapper class="white">
+    <div class="date-loaction">
+      <div class="date">
+        <div class="image-canvas">
+          <img class="icon" src="/images/icons/icon-date.png" style="background-color:{{ include.color }}" />
+        </div>
+        <div class="dl-label" style="color: {{ include.color }}">Date</div>
+        <div class="dl-value">
+            {{ include.date | date: '%-d %b  %Y' }}
+        </div>
+      </div>
+      <div class="time">
+        <div class="image-canvas">
+          <img class="icon" src="/images/icons/icon-time.png" style="background-color:{{ include.color }}" />
+        </div>
+        <div class="dl-label" style="color: {{ include.color }}">Time</div>
+        <div class="dl-value">
+          {{ page.time }}
+        </div>
+      </div>
+      <div class="location">
+        <div class="image-canvas">
+          <img class="icon" src="/images/icons/icon-place.png" style="background-color:{{ include.color }}" />
+        </div>
+        <div class="dl-label" style="color: {{ include.color }}">Where</div>
+        <div class="dl-value">
+          {{ page.city }}
+        </div>
+      </div>
+    </div>
+  </wrapper>
+</section>
+
+
+<!--section class="include-date-location">
   <section class="date">
-    <div class="label_" style="color: #{{ page.color }}">Date</div>
+    <div class="label_" style="color: {{ include.color }}">Date</div>
     <div class="value">
         {{ page.date_ | date: '%B %page, %Y' }}
     </div>
   </section>
   <section class="time">
-    <div class="label_" style="color: #{{ page.color }}">Time</div>
+    <div class="label_" style="color: {{ include.color }}">Time</div>
     <div class="value">
       {{ page.time }}
     </div>
   </section>
   <section class="place">
-    <div class="label_" style="color: #{{ page.color }}">Place</div>
+    <div class="label_" style="color: {{ include.color }}">Place</div>
     <div class="value">
       {{ page.city }}
     </div>
   </section>
-</section>
+</section-->

@@ -1,11 +1,9 @@
 ---
 #permalink: /code-sthlm-2016.html
-branding: >
-  *CO*DE*-*STHLM
+brand-suffix: STHLM
 title: CODE-STHLM
-color: 660066
+color: '#660066'
 price: Sold out!
-time: 09—18:00
 subtitle: >
   *Co*ntinuous *De*livery and *DevOps* Conference
 
@@ -17,8 +15,9 @@ event_header:
 
 # date & location
 
-date_: 25.06.2016
-city: Oslo
+date_: 2016-08-18
+time: 09—18:00
+city: Stockholm
 adress: Tordenskiolds gate 3, 0160 Oslo. Mesh
 
 checkout:
@@ -34,9 +33,9 @@ speakers:
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 ---
 
-{% include event-main.html  background-image=page.event_header.img dot-text=page.price brand-lead=page.event_header.ribbon brand-suffix="STHLM" caption=page.subtitle %}
+{% include event-main.html  background-image=page.event_header.img dot-text=page.price brand-lead=page.event_header.ribbon brand-suffix=page.brand-suffix caption=page.subtitle color=page.color %}
 
-{% include date-location.html %}
+{% include date-location.html color=page.color date=page.date_%}
 
 {% include speakers.html %}
 {% include keynote-speakers.html %}
