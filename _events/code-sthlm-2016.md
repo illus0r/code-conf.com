@@ -40,6 +40,7 @@ speakers:
   brand-lead=page.event_header.ribbon
   brand-suffix="STHLM"
   caption=page.subtitle
+
 %}
 
 {% include date-location.html %}
