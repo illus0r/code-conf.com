@@ -3,6 +3,7 @@
 brand-suffix: STHLM
 title: CODE-STHLM
 color: '#780068'
+color-name: purple
 price: Sold out!
 subtitle: >
   *Co*ntinuous *De*livery and *DevOps* Conference
@@ -52,9 +53,10 @@ speakers:
 
 {% include date-location.html color=page.color date=page.date_%}
 
-{% include speakers-caption.html caption="The speakers" %}
-{% include keynote-speakers.html speakers=page.keynote-speakers %}
-{% include speakers-bottom.html  %}
+{% include speakers-caption.html caption="The speakers" color=page.color-name %}
+{% include keynote-speakers.html speakers=page.keynote-speakers color=page.color-name %}
+{% include speakers-ruler.html  color=page.color-name %}
+{% include speakers-bottom.html  color=page.color-name %}
 
 {% comment %}
 {% include speakers.html %}
