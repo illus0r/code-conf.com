@@ -2,7 +2,7 @@
 name: Lars Kruse
 bio:  Hello there!
 position: Pos1, Praqma
-img: /images/lakruzz.png
+img: /images/speakers/lakruzz.png
 social: >
   Twitter: [lakruzz](#) Blog: [lakruzz.com](#)
 ---
