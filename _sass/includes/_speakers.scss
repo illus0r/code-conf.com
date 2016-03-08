@@ -1,7 +1,4 @@
-.include-speakers{
-  &>div{
-    @extend .col-md-12
-  }
+.include-speakers, .speakers{
   h2{
     color: white;
     font-size: 5.5em;

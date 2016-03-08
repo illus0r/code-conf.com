@@ -11,7 +11,7 @@
   margin-right: auto;
   display: block;
   position: relative;
-  background-size: contain;
+  background-size: cover;
   background-repeat: repeat-x;
 }
 
@@ -26,10 +26,22 @@
   }
   h1 {
     font-size: $font-size-base * 4;
+    padding: 0 40px 0 45px;
   }
 
   &.purple{
-    background-color: #000000;
+    background-color: $purple;
+    &.toprip{
+      &:before{
+        @include rip( before, $purple, #ffffff, 80px);
+      }
+    }
+
+    &.botrip{
+      &:after{
+        @include rip( after, $purple, #ffffff, 89px);
+      }
+    }
   }
 
   &.black{
