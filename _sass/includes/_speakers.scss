@@ -1,11 +1,12 @@
 .speakers{
   .speaker{
     @extend .row;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top:    30px;
   }
   .image{
     @extend .col-md-4;
-    text-align: center;
+    text-align: right;
     img{
       width: 80%;
       border-radius: 1000px;
@@ -14,11 +15,15 @@
   .details{
     @extend .col-md-7;
     background: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 27px;
   }
   .speaker:nth-child(2n+1){
     .image{
       @extend .col-md-push-7;
       @extend .col-md-offset-1;
+      text-align: left;
     }
     .details{
       @extend .col-md-pull-4;
@@ -34,7 +39,7 @@
   }
   .position{
     font-size: 1.8em;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
 }
