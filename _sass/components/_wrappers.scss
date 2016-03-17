@@ -1,4 +1,3 @@
-
 @mixin rip( $placement: after, $rip-color: #000000, $bg-color: transparent, $height: 89px){
   $c : str-slice( inspect($rip-color), 2);
   background-image: url(/images/layout/rip-#{$placement}-#{$c}.png);
@@ -29,17 +28,16 @@
     padding: 0 40px 0 45px;
   }
 
-  &.purple{
-    background-color: $purple;
+  &.colored{
     &.toprip{
       &:before{
-        @include rip( before, $purple, #ffffff, 80px);
+        @include rip( after, #ffffff, transparent, 80px);
       }
     }
 
     &.botrip{
       &:after{
-        @include rip( after, $purple, #ffffff, 89px);
+        @include rip( before, #ffffff, transparent, 89px);
       }
     }
   }

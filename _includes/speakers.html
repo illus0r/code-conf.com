@@ -1,6 +1,41 @@
 <section>
-  <div class="wrapper {{ include.color }}">
-    <div class="minimal-speakers">
+  <div class="wrapper colored toprip botrip" style="background-color: {{ include.color }}">
+
+      <h1>{{ include.caption }}</h1>
+
+      <div class="keynote-speakers">
+        {% for event_speaker in include.speakers %}
+          {% assign id=event_speaker[0] %}
+            {% for speaker in site.speakers %}
+              {% assign speaker_fname = speaker.path | split:"/" | last | split:"." | first %}
+              {% if speaker_fname == id %}
+                <div class="speaker">
+                  <div class="image">
+                    <img src="{{ speaker.img }}" alt="{{ speaker.name }}">
+                  </div>
+                  <div class="details">
+                    <div class="name">
+                      {{ speaker.name }}
+                    </div>
+                    <div class="position">
+                      {{ speaker.position }}
+                    </div>
+                    <div class="abstract">
+                      {{ event_speaker[1].abstract | markdownify }}
+                    </div>
+                    <div class="social">
+                      {{ speaker.social | markdownify }}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+           {% endfor %}
+        {% endfor %}
+      </div>
+
+      <img class="speaker-ruler" src="/images/layout/line-speakers.png" alt=""/>
+
+    <div class="other-speakers">
       {% for event_speaker in include.speakers %}
         {% assign id=event_speaker[0] %}
           {% for speaker in site.speakers %}
@@ -30,5 +65,6 @@
       {% endfor %}
 
     </div>
+    <div class="clearfix"></div>
   </div>
 </section>

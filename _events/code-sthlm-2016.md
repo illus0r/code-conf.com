@@ -55,11 +55,7 @@ speakers:
 
 {% include date-location.html color=page.color date=page.date_%}
 
-{% include speakers-caption.html caption="The speakers" color=page.color-name %}
-{% include keynote-speakers.html speakers=page.keynote-speakers color=page.color-name %}
-{% include speakers-ruler.html  color=page.color-name %}
-{% include speakers.html speakers=page.speakers color=page.color-name %}
-{% include speakers-bottom.html  color=page.color-name %}
+{% include speakers.html speakers=page.speakers color=page.color caption="The speakers" %}
 
 {% comment %}
 {% include speakers.html %}
