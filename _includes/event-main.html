@@ -24,8 +24,8 @@
         </div>
       </div>
 
-      {% if include.caption %}
-      <div class="caption">{{ page.subtitle | markdownify }}</div>
+      {% if include.subtitle %}
+      <div class="caption">{{ include.subtitle | markdownify }}</div>
       {% endif %}
     </div>
   </div>

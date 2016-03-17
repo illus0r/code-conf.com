@@ -16,7 +16,7 @@
         </div>
         <div class="dl-label" style="color: {{ include.color }}">Time</div>
         <div class="dl-value">
-          {{ page.time }}
+          {{ include.time }}
         </div>
       </div>
       <div class="location">
@@ -25,31 +25,9 @@
         </div>
         <div class="dl-label" style="color: {{ include.color }}">Where</div>
         <div class="dl-value">
-          {{ page.city }}
+          {{ include.city }}
         </div>
       </div>
     </div>
   </wrapper>
 </section>
-
-
-<!--section class="include-date-location">
-  <section class="date">
-    <div class="label_" style="color: {{ include.color }}">Date</div>
-    <div class="value">
-        {{ page.date_ | date: '%B %page, %Y' }}
-    </div>
-  </section>
-  <section class="time">
-    <div class="label_" style="color: {{ include.color }}">Time</div>
-    <div class="value">
-      {{ page.time }}
-    </div>
-  </section>
-  <section class="place">
-    <div class="label_" style="color: {{ include.color }}">Place</div>
-    <div class="value">
-      {{ page.city }}
-    </div>
-  </section>
-</section-->
