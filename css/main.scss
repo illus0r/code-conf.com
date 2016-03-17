@@ -3,10 +3,11 @@
 @charset "utf-8";
 
 @import
-        "base/vars.scss",
+        "base/vars",
+        "base/mixins",
         "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
-        "base/typo.scss", //on top
-        "base/layout.scss",
+        "base/typo", //on top
+        "base/layout",
         "layouts/event",
         "components/header",
         "includes/speakers",

@@ -1,0 +1,15 @@
+@mixin rip( $placement: after, $rip-color: #000000, $bg-color: transparent, $height: 89px){
+  $c : str-slice( inspect($rip-color), 2);
+  background-image: url(/images/layout/rip-#{$placement}-#{$c}.png);
+  height: $height;
+  background-color: $bg-color;
+  content: '';
+  width: 100%;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-repeat: repeat-x;
+}

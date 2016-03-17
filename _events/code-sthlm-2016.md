@@ -51,13 +51,26 @@ speakers:
 
 ---
 
-{% include event-main.html  background-image=page.event_header.img dot-text=page.price brand-lead=page.event_header.ribbon brand-suffix=page.brand-suffix subtitle=page.subtitle color=page.color %}
+{% include event-main.html  
+background-image=page.event_header.img 
+dot-text=page.price 
+brand-lead=page.event_header.ribbon 
+brand-suffix=page.brand-suffix 
+subtitle=page.subtitle 
+color=page.color %}
 
-{% include date-location.html color=page.color date=page.date_ time=page.time city=page.city %}
+{% include date-location.html 
+color=page.color 
+date=page.date_ 
+time=page.time 
+city=page.city %}
 
-{% include speakers.html speakers=page.speakers color=page.color caption="The speakers" %}
+{% include speakers.html 
+speakers=page.speakers 
+color=page.color 
+css_classes="colored toprip botrip" 
+caption="The speakers" %}
 
-{% comment %}
-{% include speakers.html %}
-{% endcomment %}
-{% include eventbrite-ticket-form.html  eventbriteid=page.checkout.eventbriteid %}
+{% include eventbrite-ticket-form.html  
+eventbriteid=page.checkout.eventbriteid 
+css_classes="black toprip botrip" %}
