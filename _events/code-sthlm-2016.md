@@ -49,6 +49,12 @@ speakers:
     abstract: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 
+sponsors:
+  - container_solutions
+  - delphix
+  - serena
+  - xebia_labs
+
 ---
 
 {% include event-main.html  
@@ -74,3 +80,9 @@ caption="The speakers" %}
 {% include eventbrite-ticket-form.html  
 eventbriteid=page.checkout.eventbriteid 
 css_classes="black toprip botrip" %}
+
+{% include sponsors.html  
+sponsors=page.sponsors
+caption="Sponsors"
+subcaption="Sell to be added here for sponsors etc."
+css_classes="" %}

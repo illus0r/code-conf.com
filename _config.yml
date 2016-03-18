@@ -12,6 +12,8 @@ collections:
     #permalink: /training/:path/
   speakers:
     output: true
+  sponsors:
+    output: true
 
 defaults:
  -
