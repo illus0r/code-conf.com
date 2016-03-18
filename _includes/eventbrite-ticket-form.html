@@ -1,8 +1,11 @@
-<section>
+<section class="include-eventbrite">
   <div class="wrapper {{ include.css_classes }}">
     <h1>Tickets</h1>
-    <div class="eventbrite-ticket-widget">
+    <div class="eventbrite-ticket-widget eventbrite-desktop">
       <iframe  src="//eventbrite.co.uk/tickets-external?eid={{ include.eventbriteid }}&ref=etckt" frameborder="0" height="300px" width="100%" vspace="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no"  allowtransparency="true"></iframe>
     </div>
+    <!--TODO fix button-->
+    <a class="eventbrite-mobile" href="http://www.eventbrite.com/e/test-tickets-{{ include.eventbriteid }}?ref=ebtnebtckt" target="_blank"><img src="https://www.eventbrite.com/custombutton?eid={{ include.eventbriteid }}" alt="Eventbrite tickets" /></a>
   </div>
+
 </section>

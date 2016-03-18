@@ -1,0 +1,20 @@
+.include-eventbrite{
+  .eventbrite-desktop{
+    @extend .hidden-xs;
+  }
+  .eventbrite-mobile{
+    @extend .visible-xs-block;
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+  .eventbrite-ticket-widget{
+    width: $container-large-desktop * 0.9;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: relative;
+    z-index: 1;
+  }
+}

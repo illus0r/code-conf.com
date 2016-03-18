@@ -1,5 +1,4 @@
 .event-main{
-
   & .image-canvas{
     z-index: 1;
     display: block;
@@ -19,7 +18,12 @@
       background-size: contain;
       background-repeat: no-repeat;
       bottom: 0px;
+      @media(max-width: $screen-xs-max){
+        /*height: 10vw;*/
+        /*TODO show and fix on small*/
+        display: none;
       }
+    }
     & .the-image{
       width: 100%;
     }
@@ -39,6 +43,14 @@
       line-height: 0.8;
       padding-top: 49px;
       z-index: 2;
+      @media(max-width: $screen-xs-max){
+        width: 20vw;
+        height: 20vw;
+        font-size: 6.2vw;
+        padding-top: 5vw;
+        top: 2vw;
+        right: 5vw;
+      }
     }
 
     & .ribbons{
@@ -51,6 +63,9 @@
         z-index: 3;
         h1{
           font-size: 9.7em;
+          @media(max-width: $screen-xs-max){
+            font-size: 15vw;
+          }
           em{
             color: $orange;
             font-style: normal;
@@ -58,6 +73,9 @@
         }
         & .on-btn{
           vertical-align: baseline;
+          @media(max-width: $screen-xs-max){
+            width: 3vw;
+          }
         }
       }
 
@@ -71,6 +89,9 @@
         padding: 0 40px 0 45px;
         z-index: 4;
         position: relative;
+        @media(max-width: $screen-xs-max){
+          font-size: 8vw;
+        }
       }
     }
   }
@@ -86,6 +107,9 @@
     em{
       color: $orange;
       font-style: normal;
+    }
+    @media(max-width: $screen-xs-max){
+      font-size: 6vw;
     }
   }
 }

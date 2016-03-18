@@ -4,6 +4,9 @@ $date-loaction-font-size: 1.7em;
   font-size:   $date-loaction-font-size;
   padding-left: 45px;
   line-height: 1.2em;
+  @media(max-width: $screen-xs-max){
+    margin-top: 7vw;
+  }
 
   & .image-canvas{
     z-index: 1;
@@ -11,6 +14,13 @@ $date-loaction-font-size: 1.7em;
     position: relative;
     float: left;
     width: 78px;
+  }
+
+  .date, .location, .time{
+    @media(max-width: $screen-sm-max){
+      margin-bottom: 40px;
+      /*@extend .clearfix;*/
+    }
   }
 
   .date, .location{

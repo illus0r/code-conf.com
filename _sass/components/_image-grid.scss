@@ -4,7 +4,7 @@
   }
   .image-grid-cell{
     @extend .col-md-3;
-    @extend .col-xs-3;
+    @extend .col-xs-6;
     height: 150px;
     overflow: hidden;
     margin-top: 25px;
