@@ -3,7 +3,7 @@
       <h1>{{ include.caption }}</h1>
 
       <div class="keynote-speakers">
-        {% for event_speaker in include.speakers %}
+        {% for event_speaker in include.keynotes %}
           {% assign id=event_speaker[0] %}
             {% for speaker in site.speakers %}
               {% assign speaker_fname = speaker.path | split:"/" | last | split:"." | first %}
