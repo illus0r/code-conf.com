@@ -1,29 +1,29 @@
 ---
 
 brand-txt: >
-    D*OC*-CPH
-title: DOC-CPH
-color: '#3c890f'
+    D*OC*-STHLM
+title: DOC-STHLM
+color: '#a56400'
 subtitle: >
-  Day Of *Co*ntainers - Copenhagen
+  Day Of *Co*ntainers - Stockholm
 dot-txt: Bring your laptop
 dot-txt-size: small
 
 # events header
 
 event_header:
-  img: /images/doc-cph-2016.png
-  ribbon: A hands-on conference...
+  img: /images/doc-sthlm-2016.jpg
+  ribbon: Join us for Day Of Containers
 
 # date & location
 
-date_: 2016-08-29
+date_: 2016-08-25
 time: 09—18:00
-city: Copenhagen
-adress: Dampfærgevej 10, 2100 København Ø, Denmark
+city: Stockholm
+adress: Clarion Hotel Sign Östra Järnvägsgatan 35 101 26 Stockholm, Sweden
 
 checkout:
-  eventbriteid: 20856339874
+  eventbriteid: 20692623193
 
 keynote-speakers:
   kelseyhightower:
