@@ -43,6 +43,9 @@
       line-height: 0.8;
       padding-top: 49px;
       z-index: 2;
+      &.small {
+        font-size: 3.3em;
+      }
       @media(max-width: $screen-xs-max){
         width: 20vw;
         height: 20vw;

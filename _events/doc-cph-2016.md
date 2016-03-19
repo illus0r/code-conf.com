@@ -1,47 +1,49 @@
 ---
 
 brand-txt: >
-    *DO*C-CPH
+    D*OC*-CPH
 title: Day Of Containers
 color: '#3c890f'
 subtitle: >
   Day Of *Co*ntainers - Copenhagen
+dot-txt: Bring your laptop
+dot-txt-size: small
 
 # events header
 
 event_header:
-  img: /images/code-cph-audience.png
-  ribbon: 3rd year in CPH...
+  img: /images/doc-cph-2016.png
+  ribbon: A hands-on conference...
 
 # date & location
 
-date_: 2016-09-13
-time: 09—17:00
+date_: 2016-08-29
+time: 09—18:00
 city: Copenhagen
-adress: Copenhagen Marriott Hotel, Kalvebod Brygge 5, 1560 Copenhagen V, Denmark
+adress: Dampfærgevej 10, 2100 København Ø, Denmark
 
 checkout:
-  eventbriteid: 23441015709
+  eventbriteid: 20856339874
 
 keynote-speakers:
-  januhagen:
-    title: Continuous Delivery - Lessons from the Aviation Industry
+  kelseyhightower:
+    title: Docker and the Future of Operating Systems
     abstract: >
-      Assuming that Continuous Delivery is the solution to your problems Jan will explore - through various stories - which character traits should be present in your team members if they are to build and deliver cutting edge software. He will touch on how to build such a team. A non-technical keynote for anyone who is managing, or is a member of, a team who are trying to implement continuous delivery.
-  jejensen:
-    title: Continuous Delivery and DevOps at Lego
-    abstract: >
-      For the past 4 years Jørn Erik has focused on implementing Continuous Delivery and DevOps processes and practices in development, quality and operations at Lego.
+      Kelsey will take a dive into the future of the operating system and how containers have the potential to destroy the Linux distro as we know it.
 
 speakers:
-  lakruzzmeekrosoft:
-    title: CoDe - The Metaphors We Live By
+  mhausenblas:
+    title: Building hybrid microservices with Docker
     abstract: >
-      Having our hands buried deep into DevOps and CoDe every single day, we tend to expand our vocabulary and lingo with metaphors, proverbs and anecdotes that enables us to understand and explain our domain. Mike and Lars will cover tales in the range from Tarantino's Pulp Fiction to Indonesia's stone age population.
-  andrewjturner:
-    title: Automation & Continuous Delivery – Lessons from the Front Line
+      Docker plays an increasingly important role in building and operating modern applications, both on-premises and in the cloud. In this introductory workshop, you will get an end-to-end understanding of Linux containers and how to operate and orchestrate them at scale. The course will teach you about the low-level concepts that make up Linux containers, how to deploy Docker containers, and how to orchestrate them using tools like Kubernetes and Mesos Marathon
+  diptanu:
+    title: Microservices at Scale with Nomad and Consul on elastic infrastructure
     abstract: >
-       Continuous Delivery is on the C-Level agenda and so it should be – it’s a game changer for IT change. But how do you prioritize what to do and align your stakeholders to get the most from the opportunity? Automation provides the foundation for continuous delivery, and learning from real life customer experiences across regulated industries is an excellent way to accelerate your adoption.
+      Microservices architecture is becoming more common for writing scalable modern services targeted for public and private clouds. However, the architecture brings in with itself a lot of challenges with respect to availability, reliable inter-process communication across services, deployment orchestration and operations. In this talk, I will go into how to design and run Microservices at scale on Docker and elastic infrastructure.
+  rasmushald:
+    title: Getting your hands dirty with Windows Containers
+    abstract: >
+      Windows Containers in Windows Server 2016 is a new big thing – Get a solid introduction to the upcoming Windows and Hyper-V Containers that will be part of the next release of Windows Server.
 
 sponsors:
   - container_solutions
@@ -53,7 +55,8 @@ sponsors:
 
 {% include event-main.html
 background-image=page.event_header.img
-dot-text=page.price
+dot-text=page.dot-txt
+dot-txt-size=page.dot-txt-size
 brand-lead=page.event_header.ribbon
 brand-txt=page.brand-txt
 subtitle=page.subtitle
