@@ -16,9 +16,9 @@
           </div>
           {% endif %}
 
-          {% if include.brand-suffix %}
+          {% if include.brand-txt %}
           <div class="brand-tag" style="background-color: {{ include.color }}">
-            <h1><em>CO</em>DE<em>-</em>{{ include.brand-suffix }}<img   class="on-btn" src="/images/icons/on-symbol-cropped.png"></h1>
+            <h1>{{ include.brand-txt | markdownify | strip | remove: '<p>' | remove: '</p>' }}<img   class="on-btn" src="/images/icons/on-symbol-cropped.png"></h1>
           </div>
           {% endif %}
         </div>

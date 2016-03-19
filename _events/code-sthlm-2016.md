@@ -1,6 +1,7 @@
 ---
 #permalink: /code-sthlm-2016.html
-brand-suffix: STHLM
+brand-txt: >
+  *CO*DE-STHLM
 title: CODE-STHLM
 color: '#780068'
 color-name: purple
@@ -57,31 +58,31 @@ sponsors:
 
 ---
 
-{% include event-main.html  
-background-image=page.event_header.img 
-dot-text=page.price 
-brand-lead=page.event_header.ribbon 
-brand-suffix=page.brand-suffix 
-subtitle=page.subtitle 
+{% include event-main.html
+background-image=page.event_header.img
+dot-text=page.price
+brand-lead=page.event_header.ribbon
+brand-txt=page.brand-txt 
+subtitle=page.subtitle
 color=page.color %}
 
-{% include date-location.html 
-color=page.color 
-date=page.date_ 
-time=page.time 
+{% include date-location.html
+color=page.color
+date=page.date_
+time=page.time
 city=page.city %}
 
-{% include speakers.html 
-speakers=page.speakers 
-color=page.color 
-css_classes="colored toprip botrip" 
+{% include speakers.html
+speakers=page.speakers
+color=page.color
+css_classes="colored toprip botrip"
 caption="The speakers" %}
 
-{% include eventbrite-ticket-form.html  
-eventbriteid=page.checkout.eventbriteid 
+{% include eventbrite-ticket-form.html
+eventbriteid=page.checkout.eventbriteid
 css_classes="black toprip botrip" %}
 
-{% include sponsors.html  
+{% include sponsors.html
 sponsors=page.sponsors
 caption="Sponsors"
 subcaption="Sell to be added here for sponsors etc."

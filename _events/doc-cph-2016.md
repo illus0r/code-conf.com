@@ -1,11 +1,11 @@
 ---
 
 brand-txt: >
-  *CO*DE-CPH
-title: CODE-CPH
+    *DO*C-CPH
+title: Day Of Containers
 color: '#3c890f'
 subtitle: >
-  *Co*ntinuous *De*livery and *DevOps* Conference - Copenhagen
+  Day Of *Co*ntainers - Copenhagen
 
 # events header
 
