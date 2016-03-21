@@ -42,6 +42,10 @@ speakers:
     title: Automation & Continuous Delivery – Lessons from the Front Line
     abstract: >
        Continuous Delivery is on the C-Level agenda and so it should be – it’s a game changer for IT change. But how do you prioritize what to do and align your stakeholders to get the most from the opportunity? Automation provides the foundation for continuous delivery, and learning from real life customer experiences across regulated industries is an excellent way to accelerate your adoption.
+  ethomson:
+    title: To Be Announced
+    abstract: >
+      To Be Announced
 
 sponsors:
   - container_solutions
