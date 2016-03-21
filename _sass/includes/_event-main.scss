@@ -66,6 +66,7 @@
         z-index: 3;
         h1{
           font-size: 9.7em;
+          padding-right: 40px;
           @media(max-width: $screen-xs-max){
             font-size: 15vw;
           }
