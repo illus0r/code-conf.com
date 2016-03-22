@@ -49,10 +49,13 @@
       @media(max-width: $screen-xs-max){
         width: 20vw;
         height: 20vw;
-        font-size: 6.2vw;
+        /*font-size: 3.2vw;*/
         padding-top: 5vw;
         top: 2vw;
         right: 5vw;
+        &.small {
+          font-size: 4.2vw;
+        }
       }
     }
 
