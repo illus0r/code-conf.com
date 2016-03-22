@@ -1,8 +1,10 @@
 header{
+  @extend .row;
   &>div{
     @extend .col-md-12;
     background: black;
     height: 70px;
+    background-clip: content-box;
   }
   a.logo{
     margin-left: 25px;
@@ -14,6 +16,7 @@ header{
     float: right;
     @media(max-width: $screen-xs-max){
       margin-top: 15px;
+      margin-right: 10px;
     }
     a{
       margin-right: 20px;

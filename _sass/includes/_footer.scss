@@ -1,0 +1,41 @@
+footer{
+  @extend .row;
+  margin-top: 50px;
+  &>div.wrapper{
+    @extend .col-md-12;
+    color: white;
+    font-family: $headings-font-family;
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .footer-content{
+    margin: -70px 20px 0;
+    padding-bottom: 20px;
+    vertical-align: baseline;
+    position: relative;
+    z-index: 1;
+  }
+  img.logo{
+    width: 100px;
+    margin: 0 10px -10px;
+    vertical-align: baseline;
+  }
+  @media(max-width: $screen-xs-max){
+    &>div.wrapper{
+      font-size: 1em;
+      /*text-align: left;*/
+    }
+    .footer-content{
+      margin-top: 0;
+      &>span{
+        display: block;
+      }
+    }
+    img.logo{
+      width: 20px;
+      /*float: left;*/
+      margin: 0 5px 0;
+    }
+  }
+}

@@ -4,6 +4,12 @@ exclude: [README.md]
 timezone: Europe/Copenhagen
 url: new.code-conf.com
 markdown: kramdown
+footer: 
+  - Brought to you by the folks at
+  - /images/praqmalogo.png
+  - The continuous development people
+praqma:
+  url: http://praqma.com
 
 collections:
   events:
