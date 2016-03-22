@@ -1,5 +1,6 @@
 ---
-
+#TODO remove this line to repair index
+permalink: /
 brand-txt: >
     D*OC*-CPH
 title: DOC-CPH
