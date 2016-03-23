@@ -80,8 +80,3 @@ caption="The speakers" %}
 eventbriteid=page.checkout.eventbriteid
 css_classes="black toprip botrip" %}
 
-{% include sponsors.html
-sponsors=page.sponsors
-caption="Sponsors"
-subcaption="A heart felt thank goes to our friends"
-css_classes="" %}
