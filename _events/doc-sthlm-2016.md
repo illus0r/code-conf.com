@@ -3,7 +3,7 @@
 brand-txt: >
     D*OC*-STHLM
 title: DOC-STHLM
-color: '#a56400'
+color: '#9d006e'
 subtitle: >
   Day Of *Co*ntainers - Stockholm
 dot-txt: Bring your laptop

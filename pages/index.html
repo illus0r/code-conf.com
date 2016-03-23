@@ -1,19 +1,29 @@
 ---
-#TODO uncomment next line to repair index
-#permalink: /
+permalink: /
 layout: default
+css_class: index
 ---
 
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for e in site.events %}
-    {{ e.url }}
-    
-      {% assign fname = e.path | split: "/" | last | split: "." | first %}
+{% include event-main.html
+background-image="/images/doc-cph-2016.png"
+brand-lead="Welcome to the home of..."
+brand-txt="*Co*ntinuous *de*livery"
+subtitle="CONFERENCES * EVENTS * TRAINING *& MORE*"
+color='#3c890f' %}
+
+<div class="conferences">
+  {% for e in site.events %}
+    <div class="conference">
       <a href="{{ e.url }}">
-        {{ e.title }}
+        <span class="brand-tag" style="background: {{ e.color }}">
+            {{ e.brand-txt | markdownify }}
+        </span>
       </a>
-    {% endfor %}
-  </ul>
+      {% include date-location.html
+      color=e.color
+      date=e.date_
+      time=e.time
+      city=e.city %}
+    </div>
+  {% endfor %}
 </div>

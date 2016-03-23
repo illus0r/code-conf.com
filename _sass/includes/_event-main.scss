@@ -1,4 +1,4 @@
-.event-main{
+.include-event-main{
   & .image-canvas{
     z-index: 1;
     display: block;
@@ -68,10 +68,13 @@
         position: relative;
         z-index: 3;
         h1{
-          font-size: 9.7em;
+          font-size: 9.2em;
           padding-right: 40px;
           @media(max-width: $screen-xs-max){
             font-size: 15vw;
+            padding-right: 10px;
+            margin-left: 10px;
+            /*TODO refactor right margins across all wrappers etc.*/
           }
           em{
             color: $orange;
@@ -98,6 +101,7 @@
         position: relative;
         @media(max-width: $screen-xs-max){
           font-size: 8vw;
+          padding: 0 10px 0 10px;
         }
       }
     }
@@ -117,6 +121,7 @@
     }
     @media(max-width: $screen-xs-max){
       font-size: 6vw;
+      padding: 0 10px 0 10px;
     }
   }
 }

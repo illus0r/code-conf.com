@@ -1,10 +1,8 @@
 ---
-#TODO remove this line to repair index
-permalink: /
 brand-txt: >
     D*OC*-CPH
 title: DOC-CPH
-color: '#3c890f'
+color: '#539184'
 subtitle: >
   Day Of *Co*ntainers - Copenhagen
 dot-txt: Bring your laptop

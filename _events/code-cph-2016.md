@@ -3,7 +3,7 @@
 brand-txt: >
   *CO*DE-CPH
 title: CODE-CPH
-color: '#3c890f'
+color: '#006666 '
 subtitle: >
   *Co*ntinuous *De*livery and *DevOps* Conference - Copenhagen
 

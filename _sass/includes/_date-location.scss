@@ -1,41 +1,44 @@
-$date-loaction-font-size: 1.7em;
-.date-loaction{
-  font-family: $headings-font-family;
-  font-size:   $date-loaction-font-size;
-  padding-left: 45px;
-  line-height: 1.2em;
-  @media(max-width: $screen-xs-max){
-    margin-top: 7vw;
-  }
-
-  & .image-canvas{
-    z-index: 1;
-    display: block;
-    position: relative;
-    float: left;
-    width: 78px;
-  }
-
-  .date, .location, .time{
-    @media(max-width: $screen-sm-max){
-      margin-bottom: 40px;
-      /*@extend .clearfix;*/
+.include-date-location{
+  @extend .row;
+  .date-location{
+    font-family: $headings-font-family;
+    font-size:   1.7em;
+    padding-left: 45px;
+    line-height: 1.2em;
+    @media(max-width: $screen-xs-max){
+      margin-top: 7vw;
+      padding: 0 10px 0 10px;
     }
-  }
 
-  .date, .location{
-    @extend .col-md-4;
-  }
+    & .image-canvas{
+      z-index: 1;
+      display: block;
+      position: relative;
+      float: left;
+      width: 78px;
+    }
 
-  .time{
-    @extend .col-md-3;
-  }
+    .date, .location, .time{
+      @media(max-width: $screen-sm-max){
+        margin-bottom: 40px;
+        /*@extend .clearfix;*/
+      }
+    }
 
-  .dl-label, .dl-value{
-    margin-right: -15px;
-  }
+    .date, .location{
+      @extend .col-md-4;
+    }
 
-  .dl-value{
-    font-size: $date-loaction-font-size*1.1;
+    .time{
+      @extend .col-md-3;
+    }
+
+    .dl-label, .dl-value{
+      margin-right: -15px;
+    }
+
+    .dl-value{
+      font-size: 1.37em;
+    }
   }
 }

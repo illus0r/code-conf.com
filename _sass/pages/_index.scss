@@ -1,0 +1,69 @@
+.page-index{
+  .include-event-main{
+    .ribbons .brand-tag h1{
+      font-size: 7.2em;
+      @media(max-width: $screen-xs-max){
+        font-size: 11.2vw;
+      }
+    }
+  }
+
+  .conferences{
+    @extend .row;
+    margin-top: 40px;
+    .conference{
+      @extend .col-md-12;
+      margin-bottom: 20px;
+      .include-date-location{
+        padding-left: 45px;
+        margin-top: 10px;
+        .date-location{
+          padding-left: 0;
+          transform: scale(0.6);
+          -moz-transform: scale(0.6);
+          transform-origin: 0% 0%;
+        }
+        .dl-value{
+          font-size: 1.37em;
+        }
+      }
+      @media(max-width: $screen-xs-max){
+        margin-bottom: -100px;
+        .include-date-location{
+          margin-top: 0;
+        }
+      }
+    }
+    a, a:hover{
+      color: white !important;
+    }
+    .brand-tag{
+      font-family: $headings-font-family;
+      display: inline-block;
+      font-size: 7.2em;
+      margin-left: 41px;
+      @media(max-width: $screen-xs-max){
+        font-size: 15vw;
+      }
+      a{
+        @extend .col-md-12;
+      }
+      p{
+        line-height: 1em;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0;
+      }
+      em{
+        color: $orange;
+        font-style: normal;
+      }
+      & .on-btn{
+        vertical-align: baseline;
+        @media(max-width: $screen-xs-max){
+          width: 3vw;
+        }
+      }
+    }
+  }
+}
