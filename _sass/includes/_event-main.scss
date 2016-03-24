@@ -1,26 +1,17 @@
 .include-event-main{
+  &>div{
+    @extend .wrapper;
+  }
   & .image-canvas{
     z-index: 1;
     display: block;
     position: relative;
     width: 100%;
     &:after{
-      background-image: url(/images/layout/rip-before-ffffff.png);
-      height: 89px;
-      background-color: transparent;
-      content: '';
-      width: 100%;
-      z-index: 2;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+      @include rip( after, white);
       position: absolute;
-      background-size: contain;
-      background-repeat: no-repeat;
       bottom: 0px;
       @media(max-width: $screen-xs-max){
-        /*height: 10vw;*/
-        /*TODO show and fix on small*/
         display: none;
       }
     }
@@ -70,11 +61,12 @@
         h1{
           font-size: 9.2em;
           padding-right: 40px;
+          color: white;
           @media(max-width: $screen-xs-max){
             font-size: 15vw;
             padding-right: 10px;
             margin-left: 10px;
-            /*TODO refactor right margins across all wrappers etc.*/
+            /*TODO refactor left margins across all wrappers etc.*/
           }
           em{
             color: $orange;

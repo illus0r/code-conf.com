@@ -1,12 +1,12 @@
 <section class="include-date-location">
-  <div class="wrapper {{ include.css_classes }}">
+  <div class="{{ include.css_classes }}">
     <div class="date-location">
       <div class="date">
         <div class="image-canvas">
           <img class="icon" src="/images/icons/icon-date.png" style="background-color:{{ include.color }}" />
         </div>
-        <div class="dl-label" style="color: {{ include.color }}">Date</div>
-        <div class="dl-value">
+        <div class="label_" style="color: {{ include.color }}">Date</div>
+        <div class="value">
             {{ include.date | date: '%-d %b  %Y' }}
         </div>
       </div>
@@ -14,8 +14,8 @@
         <div class="image-canvas">
           <img class="icon" src="/images/icons/icon-time.png" style="background-color:{{ include.color }}" />
         </div>
-        <div class="dl-label" style="color: {{ include.color }}">Time</div>
-        <div class="dl-value">
+        <div class="label_" style="color: {{ include.color }}">Time</div>
+        <div class="value">
           {{ include.time }}
         </div>
       </div>
@@ -23,8 +23,8 @@
         <div class="image-canvas">
           <img class="icon" src="/images/icons/icon-place.png" style="background-color:{{ include.color }}" />
         </div>
-        <div class="dl-label" style="color: {{ include.color }}">Where</div>
-        <div class="dl-value">
+        <div class="label_" style="color: {{ include.color }}">Where</div>
+        <div class="value">
           {{ include.city }}
         </div>
       </div>

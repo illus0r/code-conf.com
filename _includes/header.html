@@ -4,8 +4,9 @@
       <img src="/images/code-conf.png" alt="CoDe-Conf">
     </a>
     <nav class="site-nav">
-        {% for m in site.pages %}
-          {% if m.title %}
+      {% assign site_pages = site.pages | sort:"nav_weight" %}
+        {% for m in site_pages %}
+          {% if m.nav_weight %}
             <a class="page-link{% if m.url == page.url %} active{% endif %}" href="{{ m.url | prepend: site.baseurl }}">{{ m.title }}</a>
           {% endif %}
         {% endfor %}

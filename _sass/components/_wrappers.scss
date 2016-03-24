@@ -4,8 +4,9 @@
   background-clip: content-box;
 
   h1, h2, h3, h4{
-    margin: 0;
-    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*color: white;*/
   }
   h1 {
     font-size: 5.5em;
@@ -13,14 +14,17 @@
   }
 
   &.colored{
+    h1, h2, h3, h4{
+      color: white;
+    }
     &.toprip{
       &:before{
-        @include rip( after, #ffffff, transparent, 80px);
+        @include rip( before, white);
       }
     }
     &.botrip{
       &:after{
-        @include rip( before, #ffffff, transparent, 89px);
+        @include rip( after, white);
       }
     }
   }
@@ -28,14 +32,17 @@
   &.black{
     $bg-color : #000000;
     background-color: $bg-color;
+    h1, h2, h3, h4{
+      color: white;
+    }
     &.toprip{
       &:before{
-        @include rip( before, $bg-color, #ffffff, 64px);
+        @include rip( before, black, white);
       }
     }
     &.botrip{
       &:after{
-        @include rip( after, $bg-color, #ffffff, 89px);
+        @include rip( after, black, white);
       }
     }
 

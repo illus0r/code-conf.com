@@ -1,15 +1,18 @@
-footer{
+footer.site-footer{
   @extend .row;
   margin-top: 50px;
-  &>div.wrapper{
+  color: white;
+  font-family: $headings-font-family;
+  letter-spacing: 0.05em;
+  font-size: 1.5em;
+  text-align: center;
+  &>div{
     @extend .col-md-12;
-    color: white;
-    font-family: $headings-font-family;
-    letter-spacing: 0.05em;
-    font-size: 1.5em;
-    text-align: center;
+    @extend .wrapper;
+    @extend .black;
+    @extend .toprip;
   }
-  .footer-content{
+  .footer-content{ // shifts footer's content up
     margin: -70px 20px 0;
     padding-bottom: 20px;
     vertical-align: baseline;
@@ -22,9 +25,8 @@ footer{
     vertical-align: baseline;
   }
   @media(max-width: $screen-xs-max){
-    &>div.wrapper{
-      font-size: 1em;
-      /*text-align: left;*/
+    font-size: 1em;
+    &>div{
     }
     .footer-content{
       margin-top: 0;
@@ -34,7 +36,6 @@ footer{
     }
     img.logo{
       width: 20px;
-      /*float: left;*/
       margin: 0 5px 0;
     }
   }

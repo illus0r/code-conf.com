@@ -1,15 +1,18 @@
-@mixin rip( $placement: after, $rip-color: #000000, $bg-color: transparent, $height: 89px){
-  $c : str-slice( inspect($rip-color), 2);
-  background-image: url(/images/layout/rip-#{$placement}-#{$c}.png);
-  height: $height;
-  background-color: $bg-color;
+// black and white rips
+// $placement: before | after
+// $rip-color: black | white
+// background: color name or hex code
+@mixin rip( $placement: after, $rip-color: black, $background: transparent, $height: 89px){
+  background-color: $background;
+  background-image: url(/images/layout/rip-#{$placement}-#{$rip-color}.png);
+  background-repeat: repeat-x;
+  background-size: cover;
   content: '';
-  width: 100%;
-  z-index: 1;
+  display: block;
+  height: $height;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   position: relative;
-  background-size: cover;
-  background-repeat: repeat-x;
+  width: 100%;
+  z-index: 1;
 }

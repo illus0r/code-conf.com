@@ -1,4 +1,8 @@
 .include-sponsors{
+  @extend .image-grid;
+  &>div{
+    @extend .wrapper;
+  }
   h1,h2{
     color: black;
   }
@@ -12,5 +16,11 @@
     font-weight: bold;
     margin-left: 45px;
     margin-top: 7px;
+  }
+  .sponsors{
+    @extend .image-grid-wrapper;
+  }
+  .sponsor{
+    @extend .image-grid-cell;
   }
 }

@@ -1,5 +1,8 @@
 .include-date-location{
   @extend .row;
+  &>div{
+    @extend .wrapper;
+  }
   .date-location{
     font-family: $headings-font-family;
     font-size:   1.7em;
@@ -10,12 +13,14 @@
       padding: 0 10px 0 10px;
     }
 
-    & .image-canvas{
+    .image-canvas{
       z-index: 1;
       display: block;
       position: relative;
       float: left;
       width: 78px;
+      text-align: right;
+      margin-right: 10px;
     }
 
     .date, .location, .time{
@@ -33,11 +38,11 @@
       @extend .col-md-3;
     }
 
-    .dl-label, .dl-value{
-      margin-right: -15px;
-    }
+    /*.label, .value{*/
+      /*margin-right: -15px;*/
+    /*}*/
 
-    .dl-value{
+    .value{
       font-size: 1.37em;
     }
   }

@@ -1,4 +1,7 @@
 .include-speakers{
+  &>div{
+    @extend .wrapper;
+  }
   h1{
     background: url(../images/icon-speaker.png) -25px -14px no-repeat;
     padding-left: 97px;

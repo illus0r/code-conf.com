@@ -1,4 +1,7 @@
 .include-eventbrite{
+  &>div{
+    @extend .wrapper;
+  }
   .eventbrite-desktop{
     @extend .hidden-xs;
   }
